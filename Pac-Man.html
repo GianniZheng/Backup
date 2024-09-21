@@ -1,11 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+</html><!DOCTYPE html>
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pac-Man</title>
+    <style>
+        .ball {
+            width: 200px;
+            height: 200px;
+            background: conic-gradient(yellow 45deg, white 45deg 135deg, yellow 45deg);
+            border-radius: 50%;
+            position: relative;
+            top: 100px;
+            left: 20px;
+            animation: moveRight 5s linear forwards, mouth 0.25s linear infinite;
+        }
+
+        @keyframes moveRight {
+            from { left: 0; }
+            to { left: 500px; }
+        }
+        
+        @keyframes mouth {
+        	0% {background: conic-gradient(yellow 45deg, white 45deg 135deg, yellow 45deg);}
+            50% {background: yellow}
+            100% {background: conic-gradient(yellow 45deg, white 45deg 135deg, yellow 45deg);}
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="ball" id="ball"></div>
+    <script>
+    document.getElementById('ball').addEventListener('animationend', () => {
+    document.getElementById('ball').style.animation = "none";
+    document.getElementById('ball').style.animation = "moveRight 5s linear forwards";
+});
+
+    </script>
 </body>
 </html>
+
