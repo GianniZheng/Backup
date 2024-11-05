@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.body{
+    display: flex;
+    height: 100vh;
+}
+
 #root {
     height: 100vh;
     width: 100%;
@@ -5,10 +12,44 @@
     flex-direction: column;
 }
 
+.header-section{
+    display: flex;
+}
+
+.container-rait {
+    background: gray;
+    height: 100%;
+    width: 6%;
+}
+
 #header {
     height: 100px;
     width: 100%;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: flex;
+    align-items: center;
+}
+
+.icon-search{
+    font-size: 20px;
+}
+
+#research-bar {
+    height: 50%;
+    width: 15%;
+    background: #B0B0B0;
+    margin: 20px;
+    border-radius: 15px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#search-text{
+    color: #666666;
+    margin-left: 20px;
+    font-family: "Righteous", sans-serif;
+    font-size: 20px;
 }
 
 #main {
