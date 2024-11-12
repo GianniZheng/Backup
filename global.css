@@ -194,9 +194,21 @@ html[data-theme="dark"] .theme-switch > .container-icon > .icon.dark {
 }
 
 .sidebar-icon {
-  stroke: var(--color-primary)
+  stroke: var(--color-primary);
+}
+
+.setting-icon {
+  stroke: var(--color-primary);
+  position: relative;
+  margin-top: 270px;
 }
 
 .sidebar-icon:hover{
   stroke: #A26EF7;
 }
+
+.setting-icon:hover{
+  stroke: #A26EF7;
+}
+
+
