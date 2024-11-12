@@ -125,90 +125,100 @@ html[data-theme="dark"] {
 }
 
 .theme-switch {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100px;
-  height: 55px;
-  padding: 0 1em;
-  background: var(--color-background);
-  border-radius: 28px;
-  z-index: 0;
-  transform: rotate(90deg) translateX(-40px);
-  margin-top: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    height: 55px;
+    padding: 0 1em;
+    background: var(--color-background);
+    border-radius: 28px;
+    z-index: 0;
+    margin-top: auto;
 }
 
 .theme-switch > .indicator {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  top: 50%;
-  background: var(--theme-toggle-fill);
-  border-radius: 50%;
-  z-index: -1;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 50%;
+    background: var(--theme-toggle-fill);
+    border-radius: 50%;
+    z-index: -1;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html[data-theme="light"] .theme-switch > .indicator {
-  transform: translate(-10px, -50%);
+    transform: translate(-10px, -50%);
 }
 
 html[data-theme="dark"] .theme-switch > .indicator {
-  transform: translate(35px, -50%);
+    transform: translate(35px, -50%);
 }
 
 .theme-switch > .container-icon {
-  display: flex;
+    display: flex;
 }
 
 .theme-switch > .container-icon > .icon {
-  fill: var(--color-primary-lighter);
+    fill: var(--color-primary-lighter);
 }
 
 html[data-theme="light"] .theme-switch > .container-icon > .icon.light {
-  fill: var(--theme-toggle-fill-icon-active);
+    fill: var(--theme-toggle-fill-icon-active);
 }
 
 html[data-theme="dark"] .theme-switch > .container-icon > .icon.dark {
-  fill: var(--theme-toggle-fill-icon-active);
+    fill: var(--theme-toggle-fill-icon-active);
 }
 
 .theme-switch > .container-icon > .icon.light {
-  width: 25px;
-  height: 25px;
+    width: 25px;
+    height: 25px;
 }
 
 .theme-switch > .container-icon > .icon.dark {
-  width: 20px;
-  height: 20px;
-  transform: rotate(-90deg);
+    width: 20px;
+    height: 20px;
 }
 
 #sidebar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.icon-text-container {
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+
+.icon-text-container h3 {
+    font-size: 24px;
+    margin-left: 20px;
 }
 
 .sidebar-icon {
-  stroke: var(--color-primary);
+    stroke: var(--color-primary);
 }
 
-.setting-icon {
-  stroke: var(--color-primary);
-  position: relative;
-  margin-top: 270px;
+.setting-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 270px;
 }
-
+.setting-container h3 {
+    font-size: 24px;
+    margin-left: 20px;
+}
 .sidebar-icon:hover{
-  stroke: #A26EF7;
+    stroke: #A26EF7;
 }
 
-.setting-icon:hover{
-  stroke: #A26EF7;
-}
 
 
