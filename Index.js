@@ -7,3 +7,5 @@ document.querySelector(".theme-switch").addEventListener("click", () => {
       document.getElementById("website-logo").src="White-Logo.png";
     }
   });
+
+  

@@ -45,83 +45,129 @@ html[data-theme="dark"] {
 }
 
 .container-rait {
-    background: var(--color-secondary);
-    border-right: solid 2px var(--color-secondary-border);
-    height: 100%;
-    width: 6%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 10px 12px rgba(0,0,0,0.12), 0 10px 11px rgba(0,0,0,0.24);
+  background: var(--color-secondary);
+  border-right: solid 2px var(--color-secondary-border);
+  height: 100%;
+  width: 6%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 12px rgba(0,0,0,0.12), 0 10px 11px rgba(0,0,0,0.24);
+  transition: width 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #logo-section{
-    background: var(--color-secondary);
-    height: 100px;
-    width: 100%;
-    border-bottom: solid 2px var(--color-border);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: var(--color-secondary);
+  height: 100px;
+  width: 100%;
+  border-bottom: solid 2px var(--color-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #website-logo {
-    background: var(--color-background-logo);
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
+  background: var(--color-background-logo);
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.sidebar-icon {
+  cursor: pointer;
+  stroke: var(--color-primary);
+  transition: stroke 500ms ease;
+}
+
+.menu-text {
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+}
+
+.icon-container {
+
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-container:hover .sidebar-icon{
+  stroke: #A26EF7;
+}
+
+.icon-container:hover .menu-text {
+  color: #A26EF7;
+}
+
+.container-rait:hover {
+  width: 15%;
+}
+
+.container-rait:hover .menu-text{
+  visibility: visible;
+  opacity: 1;
+  width: 90px;
+  transition: opacity 2000ms ease-in-out;
+}
+
+.container-rait:hover .icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 150px;
+}
+
+.container-rait:hover h2 {
+  font-family: "Righteous", sans-serif;
+  color: var(--color-primary);
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.container-rait:hover .theme-switch {
+  transform: rotate(360deg) translateY(-40px);
 }
 
 #header {
-    background: var(--color-secondary);
-    z-index: -1;
-    height: 100px;
-    width: 100%;
-    border-bottom: solid 2px var(--color-secondary-border);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.12), 0 4px 5px rgba(0,0,0,0.24);
-    display: flex;
-    align-items: center;
+  background: var(--color-secondary);
+  z-index: -1;
+  height: 100px;
+  width: 100%;
+  border-bottom: solid 2px var(--color-secondary-border);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.12), 0 4px 5px rgba(0,0,0,0.24);
+  display: flex;
+  align-items: center;
 }
 
 .icon-search{
-    color: var(--color-primary);
-    font-size: 20px;
+  color: var(--color-primary);
+  font-size: 20px;
 }
 
 #research-bar {
-    height: 50%;
-    width: 15%;
-    background: var(--color-text-container);
-    margin: 20px;
-    border-radius: 15px;
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
+  height: 50%;
+  width: 15%;
+  background: var(--color-text-container);
+  margin: 20px;
+  border-radius: 15px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
 }
 
 #search-text{
-    color: #666666;
-    margin-left: 20px;
-    font-size: 20px;
-}
-
-#main {
-    height: 100%;
-    width: 100%;
-    display: flex;
-}
-
-.section-courses {
-    background: var(--color-background);
-    z-index: -2;
-    width: 60%;
-    height: 100%;
-}
-
-.section-map {
-    width: 40%;
-    height: 100%;
-    background-color: gray;
+  color: #666666;
+  margin-left: 20px;
+  font-size: 20px;
 }
 
 .theme-switch {
@@ -185,30 +231,24 @@ html[data-theme="dark"] .theme-switch > .container-icon > .icon.dark {
   transform: rotate(-90deg);
 }
 
-#sidebar {
+#main {
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 20px 0;
 }
 
-.sidebar-icon {
-  stroke: var(--color-primary);
+.section-courses {
+  background: var(--color-background);
+  z-index: -2;
+  width: 60%;
+  height: 100%;
 }
 
-.setting-icon {
-  stroke: var(--color-primary);
-  position: relative;
-  margin-top: 270px;
+.section-map {
+  width: 40%;
+  height: 100%;
+  background-color: gray;
 }
 
-.sidebar-icon:hover{
-  stroke: #A26EF7;
-}
-
-.setting-icon:hover{
-  stroke: #A26EF7;
-}
 
 
