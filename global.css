@@ -165,9 +165,16 @@ html[data-theme="dark"] {
 }
 
 #search-text{
+  width: 180px;
   color: #666666;
   margin-left: 20px;
   font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#search-text:focus {
+  outline: none;
 }
 
 .theme-switch {

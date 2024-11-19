@@ -8,4 +8,25 @@ document.querySelector(".theme-switch").addEventListener("click", () => {
     }
   });
 
+  const text = document.getElementById("search-text");
+  const maxLength = 200;
+
+  text.addEventListener("focus", () => {
+    if (text.textContent.includes("Cerca")) {
+      text.textContent = text.textContent.replace("Cerca", "");
+    }
+  });
+
+  text.addEventListener("blur", () => {
+    if (text.textContent.trim() === "") {
+      text.textContent = "Cerca"; 
+    }
+  });
+
+  text.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault(); // Impedisce l'inserimento della nuova riga
+    }
+  });
+
   
