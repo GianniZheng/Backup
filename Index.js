@@ -29,4 +29,11 @@ document.querySelector(".theme-switch").addEventListener("click", () => {
     }
   });
 
+  document.querySelector('.arrow-left').addEventListener('click', () => {
+    console.log('Freccia sinistra cliccata!');
+});
+
+document.querySelector('.arrow-right').addEventListener('click', () => {
+    console.log('Freccia destra cliccata!');
+});
   

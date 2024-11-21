@@ -155,7 +155,7 @@ html[data-theme="dark"] {
 
 #research-bar {
   height: 50%;
-  width: 15%;
+  width: 250px;
   background: var(--color-text-container);
   margin: 20px;
   border-radius: 15px;
@@ -249,6 +249,60 @@ html[data-theme="dark"] .theme-switch > .container-icon > .icon.dark {
   z-index: -2;
   width: 60%;
   height: 100%;
+}
+
+.card {
+  margin: 20px;
+  width: 260px;
+  height: 225px;
+  border: 3px solid rgb(70, 70, 70);
+  border-radius: 15px;
+}
+
+.image-container {
+  width: 100%;
+  height: 60%;
+  border-bottom: 3px solid rgb(70, 70, 70);
+  position: relative;
+}
+
+.courses-img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.arrow {
+  width: 20px;
+  height: 35px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 2px solid black;
+}
+
+.arrow-left {
+  left: 5px;
+}
+
+.arrow-right {
+  right: 5px;
+}
+
+.dots {
+  width: 100%;
+  height: 90px;
+}
+
+.courses-info{
+  margin: 0;
+  width: 240px;
+  height: 70px;
+  padding: 10px;
+  font-size: 15px;
+  list-style-type: none;
 }
 
 .section-map {
