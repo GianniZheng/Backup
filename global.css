@@ -249,6 +249,7 @@ html[data-theme="dark"] .theme-switch > .container-icon > .icon.dark {
   background: var(--color-background);
   width: 60%;
   height: 100%;
+  padding: 0 20px 0 20px;
 }
 
 .filter {
@@ -285,9 +286,17 @@ html[data-theme="dark"] .theme-switch > .container-icon > .icon.dark {
   font-size: 20px;
 }
 
+.card-container {
+  height: 520px;
+  width: 100%;
+  padding: 20px 0 0 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
 .card {
   position: relative;
-  margin: 20px;
   width: 260px;
   height: 225px;
   border-radius: 15px;
