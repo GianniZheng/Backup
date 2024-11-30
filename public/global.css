@@ -117,7 +117,19 @@ html[data-theme="dark"] {
   visibility: visible;
   opacity: 1;
   width: 90px;
-  transition: opacity 2000ms ease-in-out;
+  animation: slideIn 2000ms ease-in-out;
+}
+
+/* Effetto di apertura */
+@keyframes slideIn {
+  from {
+      transform: translateX(-25px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
 }
 
 .container-rait:hover .icon-container {
